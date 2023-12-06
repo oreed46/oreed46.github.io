@@ -1,0 +1,71 @@
+.container {
+    display: flex;
+}
+
+body {
+    background-color: #f7f6f2;
+}
+
+button {
+    background-color: #2d2d2d;
+    color: #f7f6f2;
+    border: none;
+    margin-top: 5px;
+    padding: 5px;
+    margin-left: 15px;
+}
+
+.column {
+    flex: 1;
+}
+
+.directory-tree {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
+    list-style-type: none;
+    margin-top: 100px;
+    margin-left: 40px;
+}
+
+.directory-tree ul {
+    margin: 0px;
+    padding: 20 0 0 20px; /* Indentation for sub-levels */
+    list-style-type: none;
+}
+
+.directory-tree li {
+    margin: 10px 0;
+    background-image: url('https://cdn.shopify.com/s/files/1/0648/9538/5834/files/folder-1437.png?v=1701790159');
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    padding-left: 50px;
+    line-height: 2.2;
+}
+
+.directory-tree span {
+    cursor: pointer;
+}
+
+.image-column {
+    text-align: center;
+}
+
+ul.custom-list {
+    list-style-type: none;
+    padding: 0%;
+    margin: 0%;
+}
+
+ul.custom-list li {
+    background-image: url('https://cdn.shopify.com/s/files/1/0648/9538/5834/files/folder-1437.png?v=1701790159');
+    background-repeat: no-repeat;
+    background-position: 0 5px;
+    padding-left: 20px;
+    line-height: 1.6;
+}
+
+#selected-image {
+    margin-left: 50px;
+    margin-right: 20px;
+    margin-top: 100px;
+}
+
