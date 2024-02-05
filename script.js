@@ -1,31 +1,40 @@
-function toggleVisibility(element) {
-    let sibling;
-
-    // Check if the clicked element is a span within .item-container
-    if (element.parentNode.classList.contains('item-container')) {
-        // If so, get the next sibling UL of the parent DIV (.item-container)
-        sibling = element.parentNode.nextElementSibling;
-    } else {
-        // Otherwise, proceed as before
-        sibling = element.nextElementSibling;
+    function openModal() {
+        document.getElementById("myModal").style.display = "block";
     }
-    
-    if (sibling) {
-        sibling.style.display = sibling.style.display === "none" ? "block" : "none";
+
+    function closeModal() {
+        document.getElementById("myModal").style.display = "none";
     }
-}
 
-function selectItem(event, item, imageUrl) {
-    event.stopPropagation(); // Stop the click event from bubbling up to the parent elements
-    document.getElementById('selected-image').src = imageUrl;
-}
+    var slideIndex = 1;
+    showSlides(slideIndex);
 
-document.addEventListener("DOMContentLoaded", function() {
-    // Select spans that are direct children of .item-container, which are in turn direct children of li elements
-    let containers = document.querySelectorAll('.directory-tree > li > .item-container > span');
-    containers.forEach(container => {
-        // We pass the span within .item-container to toggleVisibility
-        toggleVisibility(container);
-    });
-});
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
 
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {
+            slideIndex = 1;
+        }
+        if (n < 1) {
+            slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        captionText.innerHTML = dots[slideIndex - 1].alt;
+    }
