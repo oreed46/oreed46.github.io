@@ -1,238 +1,877 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Directory Tree</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="script.js" defer></script>
-</head>
-<body>
-    <div class="container">
-        <div class="column directory-column">
-            <ul class="directory-tree">
-                <li>
-                    <div class="item-container">
-                        <span onclick="toggleVisibility(this)">Reed Rubber Products</span>
-                        <button onclick="selectItem(event, this, 'https://cdn.shopify.com/s/files/1/0648/9538/5834/files/Screenshot_2023-12-12_at_1.28.34_PM.png?v=1702409324')">Set View</button>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Photo Gallery</title>
+        <link rel="stylesheet" href="style.css">
+       <!-- <script src="script.js"></script> -->
+    </head>
+    <body>
+        <header  id="navbar">
+            <nav class="navbar">
+                <div class="dropdown">
+                    <button class="dropbtn">Trips 
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="#September">Godwin</a>
+                      <a href="#October">Morehouse</a>
+                      <a href="#November">Fernwood</a>
+                      <a href="#grandkids">Grandkids</a>
+                      <a href="#rendezvouses">Rendezvouses</a>
+                      <a href="#travel">Travel</a>
                     </div>
-                        <ul class="directory-tree">
-                        <li>
-                            <div class="item-container">
-                                <span onclick="toggleVisibility(this)">All</span>
-                                <button onclick="selectItem(event, this, 'https://cdn.shopify.com/s/files/1/0648/9538/5834/files/Screenshot_2023-12-12_at_1.26.05_PM.png?v=1702409206')">Set View</button>    
-                            </div>
-                            <ul class="directory-tree">
-                                <li>
-                                    <div class="item-container">
-                                        <span onclick="toggleVisibility(this)">Documents</span>        
-                                    </div>
-                                    <ul class="directory-tree">
-                                        <li><span>Company Picnic</span></li>
-                                        <li>
-                                            <div class="item-container">
-                                                <span onclick="toggleVisibility(this)">Customer Service</span>   
-                                            </div>
-                                            <ul class="directory-tree">
-                                                <li><span>Credit Memos</span></li>
-                                                <li><span>Credit Request Forms</span></li>
-                                                <li><span>Customer Prints</span></li>
-                                                <li><span>Customer Profiles</span></li>
-                                                <li><span>Customer Statements</span></li>
-                                                <li><span>Customer W-9</span></li>
-                                                <li><span>Ecommerce Web Pictures</span></li>
-                                                <li><span>Email Messages</span></li>
-                                                <li><span>EmailMessages_6_2021</span></li>
-                                                <li><span>NC</span></li>
-                                                <li><span>new customer form</span></li>
-                                                <li><span>New Tooling SOs</span></li>
-                                                <li><span>PO</span></li>
-                                                <li><span>Quotes</span></li>
-                                                <li><span>RFQ Forms</span></li>
-                                                <li><span>RRP PO</span></li>
-                                                <li><span>Sample Approval Forms</span></li>
-                                                <li><span>Sample Approval Waiver Forms</span></li>
-                                                <li><span>sample tags</span></li>
-                                                <li><span>Shipper Invoices</span></li>
-                                                <li><span>Shipping docs</span></li>
-                                                <li><span>shopify</span></li>
-                                                <li><span>Signed Sample Approval Forms</span></li>
-                                                <li><span>SO</span></li>
-                                                <li><span>Supplier Profile Forms</span></li>
-                                                <li><span>Unipoint</span></li>
-                                                <li><span>Vendor data sheets and certs</span></li>
-                                                <li><span>Vendor W-9s</span></li>
-                                            </ul></li>
-                                        <li><span>Daily Huddles</span></li>
-                                        <li><span>Daily Priorities</span></li>
-                                        <li>
-                                            <div class="item-container">
-                                                <span onclick="toggleVisibility(this)">ECNs</span>  
-                                            </div>
-                                            <ul class="directory-tree">
-                                                <li><span>Prints</span></li>
-                                            </ul></li>
-                                        <li>
-                                            <div class="item-container">
-                                                <span onclick="toggleVisibility(this)">General</span>   
-                                            </div>
-                                            <ul class="directory-tree">
-                                                <li><span>catalog graphics</span></li>
-                                                <li><span>Company photos & videos</span></li>
-                                                <li><span>COVID Guidelines</span></li>
-                                                <li><span>Downloadable Files</span></li>
-                                                <li><span>New Parts (for Noventri)</span></li>
-                                                <li><span>Stylebook</span></li>
-                                                <li><span>Teams Training</span></li>
-                                                <li><span>Volunteering</span></li>
-                                            </ul></li>
-                                        <li><span>Image 106</span></li>
-                                        <li><span>Improvement Team</span></li>
-                                        <li><span>Manager Employee Dialogues</span></li>
-                                        <li><span>NCs</span></li>
-                                        <li><span>Planner</span></li>
-                                        <li><span>Production</span></li>
-                                        <li><span>Safety Team</span></li>
-                                        <li><span>Shared Documents</span></li>
-                                        <li><span>Tech</span></li>
-                                        <li><span>Videos</span></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <div class="item-container">
-                                        <span onclick="toggleVisibility(this)">Customer Service Documents</span>    
-                                    </div>
-                                <ul>
-                                    <li><span>Attachments for RFQ's</span></li>
-                                    <li><span>Credit Card Receipts</span></li>
-                                    <li><span>Credit Request Form to Jerrell</span></li>
-                                    <li><span>Files to Print</span></li>
-                                    <li><span>Invoices</span></li>
-                                    <li><span>Misc Graphics</span></li>
-                                    <li><span>New folder</span></li>
-                                    <li><span>Print Approvals</span></li>
-                                    <li><span>Purchase Orders</span></li>
-                                    <li><span>Quotes</span></li>
-                                    <li><span>RRP Purchase Orders</span></li>
-                                    <li><span>Sales Order Acknowledgements</span></li>
-                                    <li><span>Sample Approvals</span></li>
-                                    <li><span>Sample Waiver signed forms</span></li>
-                                    <li><span>September 2023</span></li>
-                                    <li><span>Shippers</span></li>
-                                    <li><span>Shipping docs</span></li>
-                                    <li><span>SO ACK attachments</span></li>
-                                    <li><span>Supplier Reports</span></li>
-                                    <li><span>Tooling_Orders</span></li>
-                                    <li><span>USMC Forms</span></li>
-                                    <li><span>Vendor data sheets and certs</span></li>
-                                </ul></li>
-                                <li>
-                                    <div class="item-container">
-                                        <span onclick="toggleVisibility(this)">Production</span>  
-                                    </div>
-                                <ul>
-                                    <li><span>Barcodes</span></li>
-                                    <li><span>Huddles</span></li>
-                                </ul></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <div class="item-container">
-                                <span onclick="toggleVisibility(this)">Sales</span>
-                                <button onclick="selectItem(event, this, 'https://cdn.shopify.com/s/files/1/0648/9538/5834/files/Screenshot_2023-12-12_at_1.30.36_PM.png?v=1702409446')">Set View</button>    
-                            </div>
-                                <ul class="directory-tree">
-                                    <li>
-                                        <div class="item-container">
-                                            <span onclick="toggleVisibility(this)">Documents</span>     
-                                        </div>
-                                        <ul class="directory-tree">
-                                            <li><span>ASTM Speci Info</span></li>
-                                            <li><span>B.D. Weekly Meeting</span></li>
-                                            <li><span>Daily Web Visitors Update</span></li>
-                                            <li><span>Design Reviews</span></li>
-                                            <li>
-                                                <div class="item-container">
-                                                    <span onclick="toggleVisibility(this)">General</span>
-                                                </div>
-                                                <ul class="directory-tree">
-                                                    <li><span>Email EmailMessages_7_2021</span></li>
-                                                    <li><span>Industry Reports</span></li>
-                                                    <li><span>Major Account Sales Plans</span></li>
-                                                    <li><span>On-Boarding</span></li>
-                                                    <li><span>Quarterly Meetings</span></li>
-                                                    <li><span>Sales Videos</span></li>
-                                                    <li><span>Trade Show Results</span></li>
-                                                    <li><span>Velux_RFP_Gaskets (1)_files</span></li>
-                                                    <li><span>Weekly Activity Report</span></li>
-                                                </ul></li>
-                                            <li><span>Daily Huddles</span></li>
-                                            <li><span>Daily Priorities</span></li>
-                                            <li>
-                                                <div class="item-container">
-                                                    <span onclick="toggleVisibility(this)">ECNs</span>   
-                                                </div>
-                                                <ul class="directory-tree">
-                                                    <li><span>Prints</span></li>
-                                                </ul></li>
-                                            <li>
-                                                <div class="item-container">
-                                                    <span onclick="toggleVisibility(this)">General</span>    
-                                                </div>
-                                                <ul class="directory-tree">
-                                                    <li><span>catalog graphics</span></li>
-                                                    <li><span>Company photos & videos</span></li>
-                                                    <li><span>COVID Guidelines</span></li>
-                                                    <li><span>Downloadable Files</span></li>
-                                                    <li><span>New Parts (for Noventri)</span></li>
-                                                    <li><span>Stylebook</span></li>
-                                                    <li><span>Teams Training</span></li>
-                                                    <li><span>Volunteering</span></li>
-                                                </ul></li>
-                                            <li><span>Glassbuild 2022 Planning</span></li>
-                                            <li><span>Kawneer</span></li>
-                                            <li><span>Need to be sorted</span></li>
-                                            <li><span>Sales Programs</span></li>
-                                            <li><span>Solution Development</span></li>
-                                            <li><span>Solution Development obsolete</span></li>
-                                            <li><span>Weekly Intent Report Data</span></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <div class="item-container">
-                                            <span onclick="toggleVisibility(this)">Sales Tools</span>
-                                            <button onclick="selectItem(event, this, 'https://cdn.shopify.com/s/files/1/0648/9538/5834/files/pdf.png?v=1673302785')">Set View</button>    
-                                        </div>
-                                    <ul>
-                                        <li><span>ASTM-AAMA stds</span></li>
-                                        <li><span>Brochures</span></li>
-                                        <li><span>Customer Logos</span></li>
-                                        <li><span>Graphics</span></li>
-                                        <li><span>Marketing</span></li>
-                                        <li><span>Marketing studies and standards</span></li>
-                                        <li><span>Materials Testing Reports</span></li>
-                                        <li><span>Sales Training</span></li>
-                                        <li><span>Thomasnet Footage</span></li>
-                                        <li><span>TPV Heat Aging</span></li>
-                                        <li><span>Vendor data sheets and certs</span></li>
-                                        <li><span>Virtual Backgrounds</span></li>
-                                    </ul></li>
-                                    <li>
-                                        <div class="item-container">
-                                            <span onclick="toggleVisibility(this)">Design Reviews</span>   
-                                        </div>
-                                    <ul>
-                                        <li><span>CR Laurence</span></li>
-                                        <li><span>RFQs</span></li>
-                                    </ul></li>
-                                </ul>
-                        </li>
-                        <li><span>Marketing</span></li>
-                    </ul>
-                </li>
-            </ul>
+                  </div>
+            </nav>
+        </header>
+        <div class="gallery-container">
+            <div class="group-container" id="September">
+                <div class="container">
+                    <div class="gallery-header" id="september-heading">
+                        <h1>Godwin</h1>
+                    </div>
+                    <div class="hero-image">
+                        <img src="assets/Godwin/Godwin_cover.jpeg" alt="Godwin backyard" style="width:100%">
+                    </div>
+                </div>
+                <div class="gallery" id="september-content">
+                    <img class="photo" src="assets/Godwin/image_1.jpg" alt="Godwin backyard" onclick="openModal();currentSlide(1)">
+                    <img class="photo" src="assets/Godwin/image_2.png" alt="Godwin backyard" onclick="openModal();currentSlide(2)">
+                    <img class="photo" src="assets/Godwin/image_3.png" alt="Godwin frontyard" onclick="openModal();currentSlide(3)">
+                    <img class="photo" src="assets/Godwin/image_4.jpeg" alt="autumn colors" onclick="openModal();currentSlide(4)">
+                    <img class="photo" src="assets/Godwin/image_5.jpeg" alt="autumn colors" onclick="openModal();currentSlide(5)">
+                    <img class="photo" src="assets/Godwin/image_6.jpeg" alt="trail" onclick="openModal();currentSlide(6)">
+                    <img class="photo" src="assets/Godwin/image_7.jpg" alt="garden" onclick="openModal();currentSlide(7)">
+                    <img class="photo" src="assets/Godwin/image_8.jpeg" alt="Nelson & Julliette" onclick="openModal();currentSlide(8)">
+                    <img class="photo" src="assets/Godwin/image_9.png" alt="garden" onclick="openModal();currentSlide(9)">
+                    <img class="photo" src="assets/Godwin/image_10.jpeg" alt="pool" onclick="openModal();currentSlide(10)">
+                    <img class="photo" src="assets/Godwin/image_11.png" alt="woods" onclick="openModal();currentSlide(11)">
+                    <img class="photo" src="assets/Godwin/image_12.png" alt="owl in flight" onclick="openModal();currentSlide(12)">
+                    <img class="photo" src="assets/Godwin/image_13.png" alt="owl outside porch" onclick="openModal();currentSlide(13)">
+                    <img class="photo" src="assets/Godwin/image_14.png" alt="pair of owls" onclick="openModal();currentSlide(14)">
+                    <img class="photo" src="assets/Godwin/image_15.jpeg" alt="fire" onclick="openModal();currentSlide(15)">
+                </div>
+            </div>
+            <div class="group-container" id="October">
+                <div class="container">
+                    <div class="gallery-header" id="october-heading">
+                        <h1>Lesshouse</h1>
+                    </div>
+                    <div class="hero-image" id="samestuff">
+                        <box class="flex-child">
+                            <img src="assets/Godwin/before.jpeg" alt="playing">
+                            <img src="assets/Morehouse/Picture1.png" alt="playing">
+                        </box>
+                        <h1>More memories, less house</h1>
+                    </div>
+                </div>
+                <div class="gallery" id="october-content">
+                    <img class="photo" src="assets/Morehouse/image_16.png" alt="morehouse" onclick="openModal();currentSlide(16)">
+                    <img class="photo" src="assets/Morehouse/image_17.jpeg" alt="table" onclick="openModal();currentSlide(17)">
+                    <img class="photo" src="assets/Morehouse/image_18.jpeg" alt="dinner" onclick="openModal();currentSlide(18)">
+                    <img class="photo" src="assets/Morehouse/image_19.jpeg" alt="backyard" onclick="openModal();currentSlide(19)">
+                    <img class="photo" src="assets/Morehouse/image_20.png" alt="backyard" onclick="openModal();currentSlide(20)">
+                    <img class="photo" src="assets/Morehouse/image_21.png" alt="kitchen" onclick="openModal();currentSlide(21)">
+                </div>
+                <div class="video-container">
+                    <div class="video">
+                        <video src="assets/Morehouse/nrvideo.mov" controls></video>
+                    </div>
+                    <div class="video">
+                        <video src="assets/Morehouse/image_23.mov" controls></video>
+                    </div>
+                </div>
+            </div>
+            <div class="group-container" id="November">
+                <div class="container">
+                    <div class="gallery-header" id="november-heading">
+                        <h1>Fernwood</h1>
+                    </div>
+                    <div class="hero-image">
+                        <img src="assets/Fernwood/mapfernwood.png" alt="map" style="width:100%">
+                        <h1>Home Up North</h1>
+                    </div>
+                </div>
+                <div class="gallery" id="november-content">
+                    <img class="photo" src="assets/Fernwood/image_27.jpg" alt="family" onclick="openModal();currentSlide(22)">
+                    <img class="photo" src="assets/Fernwood/image_28.jpeg" alt="snowy" onclick="openModal();currentSlide(23)">
+                    <img class="photo" src="assets/Fernwood/image_29.jpeg" alt="beers" onclick="openModal();currentSlide(24)">
+                    <img class="photo" src="assets/Fernwood/image_30.jpeg" alt="snowy" onclick="openModal();currentSlide(25)">
+                    <img class="photo" src="assets/Fernwood/image_31.jpg" alt="snowy" onclick="openModal();currentSlide(26)">
+                    <img class="photo" src="assets/Fernwood/image_32.jpeg" alt="frozen lake" onclick="openModal();currentSlide(27)">
+                    <img class="photo" src="assets/Fernwood/image_33.jpeg" alt="the roads!" onclick="openModal();currentSlide(28)">
+                    <img class="photo" src="assets/Fernwood/image_34.jpeg" alt="patio" onclick="openModal();currentSlide(29)">
+                    <img class="photo" src="assets/Fernwood/image_35.jpeg" alt="door" onclick="openModal();currentSlide(30)">
+                    <img class="photo" src="assets/Fernwood/image_36.jpeg" alt="turkey" onclick="openModal();currentSlide(31)">
+                    <img class="photo" src="assets/Fernwood/image_37.jpeg" alt="fernwood" onclick="openModal();currentSlide(32)">
+                    <img class="photo" src="assets/Fernwood/image_38.jpeg" alt="badminton" onclick="openModal();currentSlide(33)">
+                    <img class="photo" src="assets/Fernwood/image_39.jpeg" alt="garden" onclick="openModal();currentSlide(34)">
+                    <img class="photo" src="assets/Fernwood/image_40.jpeg" alt="woods" onclick="openModal();currentSlide(35)">
+                    <img class="photo" src="assets/Fernwood/image_41.jpeg" alt="garden" onclick="openModal();currentSlide(36)">
+                    <img class="photo" src="assets/Fernwood/image_42.jpeg" alt="deer" onclick="openModal();currentSlide(37)">
+                    <img class="photo" src="assets/Fernwood/image_43.jpeg" alt="garden" onclick="openModal();currentSlide(38)">
+                    <img class="photo" src="assets/Fernwood/image_44.jpeg" alt="braai" onclick="openModal();currentSlide(39)">
+                    <img class="photo" src="assets/Fernwood/image_45.jpeg" alt="garden" onclick="openModal();currentSlide(40)">
+                    <img class="photo" src="assets/Fernwood/image_46.jpeg" alt="boat" onclick="openModal();currentSlide(41)">
+                    <img class="photo" src="assets/Fernwood/image_47.jpeg" alt="fernwood" onclick="openModal();currentSlide(42)">
+                    <img class="photo" src="assets/Fernwood/image_48.png" alt="lake" onclick="openModal();currentSlide(43)">
+                    <img class="photo" src="assets/Fernwood/image_49.jpeg" alt="woodie" onclick="openModal();currentSlide(44)">
+                    <img class="photo" src="assets/Fernwood/image_50.jpeg" alt="fire" onclick="openModal();currentSlide(45)">
+                    <img class="photo" src="assets/Fernwood/image_51.jpeg" alt="kayak" onclick="openModal();currentSlide(46)">
+                    <img class="photo" src="assets/Fernwood/image_27.jpg" alt="violin" onclick="openModal();currentSlide(47)"> <!-- Please note the duplicate image_27 -->
+                    <img class="photo" src="assets/Fernwood/image_53.jpeg" alt="backyard" onclick="openModal();currentSlide(48)">
+                    <img class="photo" src="assets/Fernwood/image_54.jpeg" alt="sail" onclick="openModal();currentSlide(49)">
+                    <img class="photo" src="assets/Fernwood/image_55.jpeg" alt="violin" onclick="openModal();currentSlide(50)">
+                    <img class="photo" src="assets/Fernwood/image_56.jpeg" alt="dinner" onclick="openModal();currentSlide(51)">
+                    <img class="photo" src="assets/Fernwood/image_57.jpeg" alt="dinner" onclick="openModal();currentSlide(52)">
+                    <img class="photo" src="assets/Fernwood/image_58.jpeg" alt="garden" onclick="openModal();currentSlide(53)">
+                    <img class="photo" src="assets/Fernwood/image_59.jpeg" alt="garden" onclick="openModal();currentSlide(54)">
+                    <img class="photo" src="assets/Fernwood/image_60.jpeg" alt="lake" onclick="openModal();currentSlide(55)">
+                    <img class="photo" src="assets/Fernwood/image_61.jpg" alt="back" onclick="openModal();currentSlide(56)">       
+                </div>
+                <div class="video-container">
+                    <div class="video">
+                        <video src="assets/Fernwood/image_26.mov" controls></video>
+                    </div>
+                    <div class="video">
+                        <video src="assets/Fernwood/image_33.mov" controls></video>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-container">
+                <div class="group-container" id="grandkids">
+                    <div class="container">
+                        <div class="gallery-header" id="grandkids-heading">
+                            <h1>Grandkids</h1>
+                        </div>
+                        <div class="hero-image">
+                            <img src="assets/grandkids/image_62.jpeg" alt="grandkids" style="width:100%">
+                        </div>
+                    </div>
+                    <div class="gallery" id="grandkids-content">
+                        <img class="photo" src="assets/grandkids/image_57.jpeg" alt="grandkids" onclick="openModal();currentSlide(57)">
+                        <img class="photo" src="assets/grandkids/image_58.jpeg" alt="grandkids" onclick="openModal();currentSlide(58)">
+                        <img class="photo" src="assets/grandkids/image_59.jpeg" alt="grandkids" onclick="openModal();currentSlide(59)">
+                        <img class="photo" src="assets/grandkids/image_71.jpeg" alt="grandkids" onclick="openModal();currentSlide(60)">
+                        <img class="photo" src="assets/grandkids/image_61.jpeg" alt="grandkids" onclick="openModal();currentSlide(61)">
+                        <img class="photo" src="assets/grandkids/image_62.jpeg" alt="grandkids" onclick="openModal();currentSlide(62)">
+                        <img class="photo" src="assets/grandkids/image_63.jpeg" alt="grandkids" onclick="openModal();currentSlide(63)">
+                        <img class="photo" src="assets/grandkids/image_64.jpeg" alt="grandkids" onclick="openModal();currentSlide(64)">
+                        <img class="photo" src="assets/grandkids/image_65.jpg" alt="grandkids" onclick="openModal();currentSlide(65)">
+                        <img class="photo" src="assets/grandkids/image_66.jpeg" alt="grandkids" onclick="openModal();currentSlide(66)">
+                        <img class="photo" src="assets/grandkids/image_67.jpeg" alt="grandkids" onclick="openModal();currentSlide(67)">
+                        <img class="photo" src="assets/grandkids/image_68.jpeg" alt="grandkids" onclick="openModal();currentSlide(68)">
+                        <img class="photo" src="assets/grandkids/image_69.jpeg" alt="grandkids" onclick="openModal();currentSlide(69)">
+                        <img class="photo" src="assets/grandkids/image_70.jpeg" alt="grandkids" onclick="openModal();currentSlide(70)">
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-container">
+                <div class="group-container" id="rendezvouses">
+                    <div class="container">
+                        <div class="gallery-header" id="rendezvouses-heading">
+                            <h1>Rendezvouses</h1>
+                        </div>
+                        <div class="hero-image">
+                            <img src="assets/rendezvouses/image_76.jpeg" alt="rendezvouses" style="width:100%">
+                        </div>
+                    </div>
+                    <div class="gallery" id="rendezvouses-content">
+                        <img class="photo" src="assets/rendezvouses/image_71.jpeg" alt="grandkids" onclick="openModal();currentSlide(71)">
+                        <img class="photo" src="assets/rendezvouses/image_72.jpeg" alt="grandkids" onclick="openModal();currentSlide(72)">
+                        <img class="photo" src="assets/rendezvouses/image_73.jpg" alt="grandkids" onclick="openModal();currentSlide(73)">
+                        <img class="photo" src="assets/rendezvouses/image_74.jpeg" alt="grandkids" onclick="openModal();currentSlide(74)">
+                        <img class="photo" src="assets/rendezvouses/image_75.jpeg" alt="grandkids" onclick="openModal();currentSlide(75)">
+                        <img class="photo" src="assets/rendezvouses/image_76.jpeg" alt="grandkids" onclick="openModal();currentSlide(76)">
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-container">
+                <div class="group-container" id="travel">
+                    <div class="container">
+                        <div class="gallery-header" id="travel-heading">
+                            <h1>Travel</h1>
+                        </div>
+                        <div class="hero-image">
+                            <img src="assets/travel/image_77.jpeg" alt="travel" style="width:100%">
+                        </div>
+                    </div>
+                    <div class="gallery" id="travel-content">
+                        <img class="photo" src="assets/travel/image_77.jpeg" alt="travel" onclick="openModal();currentSlide(77)">
+                        <img class="photo" src="assets/travel/image_78.jpeg" alt="travel" onclick="openModal();currentSlide(78)">
+                        <img class="photo" src="assets/travel/image_79.jpeg" alt="travel" onclick="openModal();currentSlide(79)">
+                        <img class="photo" src="assets/travel/image_80.jpeg" alt="travel" onclick="openModal();currentSlide(80)">
+                        <img class="photo" src="assets/travel/image_81.jpeg" alt="travel" onclick="openModal();currentSlide(81)">
+                        <img class="photo" src="assets/travel/image_82.jpeg" alt="travel" onclick="openModal();currentSlide(82)">
+                        <img class="photo" src="assets/travel/image_83.jpeg" alt="travel" onclick="openModal();currentSlide(83)">
+                        <img class="photo" src="assets/travel/image_84.png" alt="travel" onclick="openModal();currentSlide(84)">
+                        <img class="photo" src="assets/travel/image_85.jpeg" alt="travel" onclick="openModal();currentSlide(85)">
+                        <img class="photo" src="assets/travel/image_86.png" alt="travel" onclick="openModal();currentSlide(86)">
+                        <img class="photo" src="assets/travel/image_87.jpeg" alt="travel" onclick="openModal();currentSlide(87)">
+                        <img class="photo" src="assets/travel/image_88.jpeg" alt="travel" onclick="openModal();currentSlide(88)">
+                        <img class="photo" src="assets/travel/image_89.jpeg" alt="travel" onclick="openModal();currentSlide(89)">
+                        <img class="photo" src="assets/travel/image_90.jpeg" alt="travel" onclick="openModal();currentSlide(90)">
+                        <img class="photo" src="assets/travel/image_91.jpeg" alt="travel" onclick="openModal();currentSlide(91)">
+                    </div>
+                    <div class="video-container">
+                        <div class="video">
+                            <video src="assets/travel/channel_vid.MOV" controls></video>
+                        </div>
+                        <div class="video">
+                            <video src="assets/travel/gcanyon.MOV" controls></video>
+                        </div>
+                        <div class="video">
+                            <video src="assets/travel/grandcanyon.MOV" controls></video>
+                        </div>
+                        <div class="video">
+                            <video src="assets/travel/image_84.mov" controls></video>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="column image-column">
-            <img id="selected-image" src="" alt="Selected View"/>
-        </div>
-    </div>
-</body>
+
+        <!-- The Modal/Lightbox -->
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+                <div class="mySlides">
+                    <img src="assets/Godwin/image_1.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/Godwin/image_2.png" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/Godwin/image_3.png" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/Godwin/image_4.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/Godwin/image_5.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/Godwin/image_6.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/Godwin/image_7.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/Godwin/image_8.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/Godwin/image_9.png" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/Godwin/image_10.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/Godwin/image_11.png" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/Godwin/image_12.png" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/Godwin/image_13.png" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/Godwin/image_14.png" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/Godwin/image_15.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/Morehouse/image_16.png" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/Morehouse/image_17.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/Morehouse/image_18.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/Morehouse/image_19.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/Morehouse/image_20.png" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/Morehouse/image_21.png" style="width:100%">
+                </div>
+                </div>
+                <div class="mySlides">
+                    <img src="assets/Fernwood/image_27.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/Fernwood/image_28.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/Fernwood/image_29.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/Fernwood/image_30.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/Fernwood/image_31.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/Fernwood/image_32.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/Fernwood/image_33.jpeg" style="width:100%"> 
+                </div>
+                <div class="mySlides">
+                    <img src="assets/Fernwood/image_34.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/Fernwood/image_35.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/Fernwood/image_36.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/Fernwood/image_37.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/Fernwood/image_38.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/Fernwood/image_39.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/Fernwood/image_40.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/Fernwood/image_41.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/Fernwood/image_42.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/Fernwood/image_43.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/Fernwood/image_44.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/Fernwood/image_45.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/Fernwood/image_46.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/Fernwood/image_47.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/Fernwood/image_48.png" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/Fernwood/image_49.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/Fernwood/image_50.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/Fernwood/image_51.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/Fernwood/image_27.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/Fernwood/image_53.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/Fernwood/image_54.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/Fernwood/image_55.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/Fernwood/image_56.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/Fernwood/image_57.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/Fernwood/image_58.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/Fernwood/image_59.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/Fernwood/image_60.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/Fernwood/image_61.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/grandkids/image_57.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/grandkids/image_58.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/grandkids/image_59.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/grandkids/image_71.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/grandkids/image_61.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/grandkids/image_62.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/grandkids/image_63.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/grandkids/image_64.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/grandkids/image_65.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/grandkids/image_66.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/grandkids/image_67.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/grandkids/image_68.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/grandkids/image_69.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/grandkids/image_70.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/rendezvouses/image_71.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/rendezvouses/image_72.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/rendezvouses/image_73.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/rendezvouses/image_74.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/rendezvouses/image_75.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/rendezvouses/image_76.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/travel/image_77.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/travel/image_78.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/travel/image_79.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/travel/image_80.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/travel/image_81.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/travel/image_82.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/travel/image_83.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/travel/image_84.png" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/travel/image_85.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/travel/image_86.png" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/travel/image_87.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/travel/image_88.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/travel/image_89.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/travel/image_90.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/travel/image_91.jpeg" style="width:100%">
+                </div>
+                            
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <!-- Caption text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+                <!-- Thumbnail image controls -->
+                <div id="thumbnail-container">
+                    <div class="column">
+                        <img class="demo" src="assets/Godwin/image_1.jpg" onclick="currentSlide(1)" alt="Godwin backyard">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/Godwin/image_2.png" onclick="currentSlide(2)" alt="Godwin backyard">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/Godwin/image_3.png" onclick="currentSlide(3)" alt="Godwin frontyard">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/Godwin/image_4.jpeg" onclick="currentSlide(4)" alt="autumn colors">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/Godwin/image_5.jpeg" onclick="currentSlide(5)" alt="autumn colors">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/Godwin/image_6.jpeg" onclick="currentSlide(6)" alt="trail">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/Godwin/image_7.jpg" onclick="currentSlide(7)" alt="garden">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/Godwin/image_8.jpeg" onclick="currentSlide(8)" alt="Nelson & Julliette">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/Godwin/image_9.png" onclick="currentSlide(9)" alt="garden">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/Godwin/image_10.jpeg" onclick="currentSlide(10)" alt="pool">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/Godwin/image_11.png" onclick="currentSlide(11)" alt="woods">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/Godwin/image_12.png" onclick="currentSlide(12)" alt="owl in flight">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/Godwin/image_13.png" onclick="currentSlide(13)" alt="owl outside porch">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/Godwin/image_14.png" onclick="currentSlide(14)" alt="pair of owls">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/Godwin/image_15.jpeg" onclick="currentSlide(15)" alt="fire">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/Morehouse/image_16.png" onclick="currentSlide(16)" alt="morehouse">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/Morehouse/image_17.jpeg" onclick="currentSlide(17)" alt="table">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/Morehouse/image_18.jpeg" onclick="currentSlide(18)" alt="dinner">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/Morehouse/image_19.jpeg" onclick="currentSlide(19)" alt="backyard">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/Morehouse/image_20.png" onclick="currentSlide(20)" alt="backyard">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/Morehouse/image_21.png" onclick="currentSlide(21)" alt="kitchen">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/Fernwood/image_27.jpg" onclick="currentSlide(22)" alt="family">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/Fernwood/image_28.jpeg" onclick="currentSlide(23)" alt="snowy">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/Fernwood/image_29.jpeg" onclick="currentSlide(24)" alt="beers">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/Fernwood/image_30.jpeg" onclick="currentSlide(25)" alt="snowy">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/Fernwood/image_31.jpg" onclick="currentSlide(26)" alt="snowy">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/Fernwood/image_32.jpeg" onclick="currentSlide(27)" alt="frozen lake">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/Fernwood/image_33.jpeg" onclick="currentSlide(28)" alt="the roads!">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/Fernwood/image_34.jpeg" onclick="currentSlide(29)" alt="patio">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/Fernwood/image_35.jpeg" onclick="currentSlide(30)" alt="door">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/Fernwood/image_36.jpeg" onclick="currentSlide(31)" alt="turkey">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/Fernwood/image_37.jpeg" onclick="currentSlide(32)" alt="fernwood">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/Fernwood/image_38.jpeg" onclick="currentSlide(33)" alt="badminton">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/Fernwood/image_39.jpeg" onclick="currentSlide(34)" alt="garden">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/Fernwood/image_40.jpeg" onclick="currentSlide(35)" alt="woods">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/Fernwood/image_41.jpeg" onclick="currentSlide(36)" alt="garden">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/Fernwood/image_42.jpeg" onclick="currentSlide(37)" alt="deer">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/Fernwood/image_43.jpeg" onclick="currentSlide(38)" alt="garden">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/Fernwood/image_44.jpeg" onclick="currentSlide(39)" alt="braai">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/Fernwood/image_45.jpeg" onclick="currentSlide(40)" alt="garden">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/Fernwood/image_46.jpeg" onclick="currentSlide(41)" alt="boat">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/Fernwood/image_47.jpeg" onclick="currentSlide(42)" alt="fernwood">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/Fernwood/image_48.png" onclick="currentSlide(43)" alt="lake">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/Fernwood/image_49.jpeg" onclick="currentSlide(44)" alt="woodie">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/Fernwood/image_50.jpeg" onclick="currentSlide(45)" alt="fire">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/Fernwood/image_51.jpeg" onclick="currentSlide(46)" alt="kayak">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/Fernwood/image_27.jpg" onclick="currentSlide(47)" alt="violin">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/Fernwood/image_53.jpeg" onclick="currentSlide(48)" alt="backyard">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/Fernwood/image_54.jpeg" onclick="currentSlide(49)" alt="sail">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/Fernwood/image_55.jpeg" onclick="currentSlide(50)" alt="violin">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/Fernwood/image_56.jpeg" onclick="currentSlide(51)" alt="dinner">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/Fernwood/image_57.jpeg" onclick="currentSlide(52)" alt="dinner">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/Fernwood/image_58.jpeg" onclick="currentSlide(53)" alt="garden">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/Fernwood/image_59.jpeg" onclick="currentSlide(54)" alt="garden">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/Fernwood/image_60.jpeg" onclick="currentSlide(55)" alt="lake">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/Fernwood/image_61.jpg" onclick="currentSlide(56)" alt="back">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/grandkids/image_57.jpeg" onclick="currentSlide(57)" alt="grandkids">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/grandkids/image_58.jpeg" onclick="currentSlide(58)" alt="grandkids">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/grandkids/image_59.jpeg" onclick="currentSlide(59)" alt="grandkids">
+                    </div> 
+                    <div class="column">
+                        <img class="demo" src="assets/grandkids/image_71.jpeg" onclick="currentSlide(60)" alt="grandkids">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/grandkids/image_61.jpeg" onclick="currentSlide(61)" alt="grandkids">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/grandkids/image_62.jpeg" onclick="currentSlide(62)" alt="grandkids">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/grandkids/image_63.jpeg" onclick="currentSlide(63)" alt="grandkids">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/grandkids/image_64.jpeg" onclick="currentSlide(64)" alt="grandkids">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/grandkids/image_65.jpg" onclick="currentSlide(65)" alt="grandkids">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/grandkids/image_66.jpeg" onclick="currentSlide(66)" alt="grandkids">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/grandkids/image_67.jpeg" onclick="currentSlide(67)" alt="grandkids">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/grandkids/image_68.jpeg" onclick="currentSlide(68)" alt="grandkids">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/grandkids/image_69.jpeg" onclick="currentSlide(69)" alt="grandkids">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/grandkids/image_70.jpeg" onclick="currentSlide(70)" alt="grandkids">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/rendezvouses/image_71.jpeg" onclick="currentSlide(71)" alt="rendezvouses">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/rendezvouses/image_72.jpeg" onclick="currentSlide(72)" alt="rendezvouses">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/rendezvouses/image_73.jpg" onclick="currentSlide(73)" alt="rendezvouses">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/rendezvouses/image_74.jpeg" onclick="currentSlide(74)" alt="rendezvouses">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/rendezvouses/image_75.jpeg" onclick="currentSlide(75)" alt="rendezvouses">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="assets/rendezvouses/image_76.jpeg" onclick="currentSlide(76)" alt="rendezvouses">
+                    </div> 
+                    <div class="column">
+                        <img class="demo" src="assets/travel/image_77.jpeg" onclick="currentSlide(77)" alt="travel">
+                    </div> 
+                    <div class="column">
+                        <img class="demo" src="assets/travel/image_78.jpeg" onclick="currentSlide(78)" alt="travel">
+                    </div> 
+                    <div class="column">
+                        <img class="demo" src="assets/travel/image_79.jpeg" onclick="currentSlide(79)" alt="travel">
+                    </div> 
+                    <div class="column">
+                        <img class="demo" src="assets/travel/image_80.jpeg" onclick="currentSlide(80)" alt="travel">
+                    </div> 
+                    <div class="column">
+                        <img class="demo" src="assets/travel/image_81.jpeg" onclick="currentSlide(81)" alt="travel">
+                    </div> 
+                    <div class="column">
+                        <img class="demo" src="assets/travel/image_82.jpeg" onclick="currentSlide(82)" alt="travel">
+                    </div> 
+                    <div class="column">
+                        <img class="demo" src="assets/travel/image_83.jpeg" onclick="currentSlide(83)" alt="travel">
+                    </div> 
+                    <div class="column">
+                        <img class="demo" src="assets/travel/image_84.png" onclick="currentSlide(84)" alt="travel">
+                    </div> 
+                    <div class="column">
+                        <img class="demo" src="assets/travel/image_85.jpeg" onclick="currentSlide(85)" alt="travel">
+                    </div> 
+                    <div class="column">
+                        <img class="demo" src="assets/travel/image_86.png" onclick="currentSlide(86)" alt="travel">
+                    </div> 
+                    <div class="column">
+                        <img class="demo" src="assets/travel/image_87.jpeg" onclick="currentSlide(87)" alt="travel">
+                    </div> 
+                    <div class="column">
+                        <img class="demo" src="assets/travel/image_88.jpeg" onclick="currentSlide(88)" alt="travel">
+                    </div> 
+                    <div class="column">
+                        <img class="demo" src="assets/travel/image_89.jpeg" onclick="currentSlide(89)" alt="travel">
+                    </div> 
+                    <div class="column">
+                        <img class="demo" src="assets/travel/image_90.jpeg" onclick="currentSlide(90)" alt="travel">
+                    </div> 
+                    <div class="column">
+                        <img class="demo" src="assets/travel/image_91.jpeg" onclick="currentSlide(91)" alt="travel">
+                    </div>               
+                </div>
+            </div>
+        <footer>
+            <p>2024 Photos</p>
+        </footer>
+        <script>
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.gallery-header').forEach(function(header) {
+        header.addEventListener('click', function() {
+            // Navigate up to the parent .group-container div
+            var parent = this.closest('.group-container');
+            // Find the .gallery div within the parent
+            var gallery = parent.querySelector('.gallery');
+            var heroImage = parent.querySelector('.hero-image');
+            var samestuff = document.getElementById('samestuff');
+            // Toggle the "hidden" class
+            // Toggle the "hidden" class
+            gallery.classList.toggle('hidden');
+            heroImage.classList.toggle('hidden');
+            samestuff.classList.toggle('hidden');
+        });
+    });
+});
+            </script>
+            <script>
+        function openModal() {
+        document.getElementById("myModal").style.display = "block";
+    }
+
+    function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+    }
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {
+            slideIndex = 1;
+        }
+        if (n < 1) {
+            slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        captionText.innerHTML = dots[slideIndex - 1].alt;
+    }
+            </script>
+    <script>
+        // JavaScript to change navbar opacity on scroll
+        window.onscroll = function() {scrollFunction()};
+    
+        function scrollFunction() {
+            var navbar = document.getElementById("navbar");
+            if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+                navbar.style.opacity = "0";
+            } else {
+                navbar.style.opacity = "1";
+            }
+        }
+    </script>
+            
+    </body>
 </html>
